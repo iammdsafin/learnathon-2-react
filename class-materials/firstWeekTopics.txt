@@ -1,0 +1,11 @@
+  - Component lifecycle methods
+  - Creating class and functional components
+  - Conditional rendering (recap)
+  - Lists and keys
+  - Understanding state in React
+  - Props and state in components (recap)
+  - Event handling in React (recap)
+  - Handling forms in React
+  - Controlled components and form validation
+  - Navigating between pages in a React application
+  - Creating routes and route parameters
