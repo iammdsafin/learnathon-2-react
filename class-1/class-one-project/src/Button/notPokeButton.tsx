@@ -1,5 +1,6 @@
 //use of props in functional component
 //using interface
+import { useState } from "react";
 import "./button.css";
 interface notPokemeButtonProps {
   type: string;
@@ -7,16 +8,29 @@ interface notPokemeButtonProps {
 
 // Use of jsx and tsx in functional component
 const NotPokeMeButton = (props: notPokemeButtonProps) => {
+  //useState in functional component
+  const [count, setCount] = useState<number>(0);
   const { type } = props;
+
+  const clickCount = () => {
+    setCount(count + 1);
+  };
+
   const getButtonText = (buttonType: string) => {
     if (buttonType === "notpokeme") {
-      return "Please Do Not Poke Me!";
+      return (
+        "Please Do Not Poke Me! But You Have Poked Me " + count + " Times! :("
+      );
     } else {
       return "Do Not Poke Me!";
     }
   };
 
-  return <button className="style">{getButtonText(type)}</button>;
+  return (
+    <button className="style" onClick={clickCount}>
+      {getButtonText(type)}
+    </button>
+  );
 };
 
 // const NotPokeMe = (props: notPokeButtonProps) => {
