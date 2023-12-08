@@ -1,0 +1,113 @@
+01. JavaScript's most popular 3 library or framework are React, Angular and Vue.js
+	=>https://www.browserstack.com/guide/angular-vs-react-vs-vue
+
+    React is often referred to as a component based library, specifically a JavaScript library for building user interfaces. However, its characteristics sometimes blur the lines between library and framework.
+    React is primarily focused on building user interfaces and handling the view layer of applications. It allows developers to create reusable UI components and manage the state of these components efficiently. 
+    React itself doesn't enforce a complete application structure like traditional frameworks; instead, it is more of a component-based library that provides a way to build user interfaces by composing components together.
+    While React is more commonly categorized as a library due to its focus on the view layer and its flexibility.
+    it can be combined with other libraries and tools (like Redux for state management) to provide a more structured framework-like environment for building complex applications. 
+    This flexibility in choosing additional tools and libraries makes React more versatile for various project requirements.
+
+    In conclusion, React is predominantly considered a library for building user interfaces due to its focused functionality, but its usage and combination with other tools can sometimes give it characteristics that align with those of a framework.
+
+02. What is library and framework?
+    In software development, a library and a framework are both reusable code written by someone else that programmer can use to help solve common problems.
+    Remember, a library is a set of functions and procedures that you can call, while a framework provides a structure for your application and calls your code.
+
+    Library:
+    A library is a collection of functions and procedures that a program can use. The programmer is in control and decides when to use the library. 
+    Libraries don't dictate the structure of the code. They are tools that programmers can choose to use when programmers want.
+
+    Framework:
+    A framework, on the other hand, provides a structure or architecture for application. It dictates the architecture of software and provides guidelines for best practices. 
+    While using a framework, programmer are required to follow its rules and structure. In other words, a framework is in control and calls code.
+
+03. Here are some key differences between a library and a framework:
+
+    Control Flow:
+    In a library, the user is in control of the flow of the application. They decide when and where to call the library's functions. In a framework, the control is inverted: the framework is in charge of the flow. 
+    It provides some places for the user to plug in their code, but it calls the shots.
+
+    Code Ownership:
+    When you use a library, you are writing the main body of the code. You control when to use the library. With a framework, the main body of the code is already there, and you are just filling in the details.
+
+    Structure and Design:
+    A library is just a collection of class definitions and functions. It doesn't impose a way of designing your application. 
+    On the other hand, a framework provides a skeleton where the application defines its own features to flesh out the skeleton. In other words, a framework defines a structure for your application.
+
+    Flexibility:
+    Libraries tend to be more flexible than frameworks. You can use a library in a part of your application without it affecting the rest of the code. 
+    With a framework, all parts of your application are affected by the framework.
+
+    Usage:
+    You call a library where you need it, while a framework calls your code.
+
+04. When to use a library and when to use a framework?
+    After deciding project size, duration, dimension, complexity, team size, budget, etc. then decide to use library or framework.
+    
+    If want to build a small project, single page application, small team then use a library.
+    Only needed library will be used. No need to use unnecessary library. So while developing a small project then use a library.
+    
+    If want to build a large project, large team then use a framework.
+    All the library will be used and can not be removed in a framework. So, while developing a large project then use a framework.
+    Quick development.
+
+05. What is nvm?
+    => nvm stands for Node Version Manager. It is a command-line utility for managing Node versions. It allows you to install multiple versions of Node.js, switch between them, and more. 
+        It is a cross-platform tool that works on macOS, Linux, and Windows. It is written in Bash and is used to manage multiple active versions of Node.js on the same system. 
+        It allows you to install, uninstall, and switch between different versions of Node.js. It is a must-have tool for every Node.js developer.
+        It is a must-have tool for every Node.js developer.
+
+    =>https://www.freecodecamp.org/news/nvm-for-windows-how-to-download-and-install-node-version-manager-in-windows-10/
+
+06. React Documentation
+    =>https://create-react-app.dev/docs/getting-started/
+
+07. Useful commands for nvm
+    => nvm version check => nvm -v
+    => To install latest version of node => nvm install latest
+    => To install the LTS (stable) version of Node => nvm install lts
+    => To see all the installed versions of Node => nvm list available
+    => To install specific version of node => nvm install 20.10.0
+    => To use specific version of node => nvm use 20.10.0
+    => If the version of NPM want to use is not available => npm install @npm version-number -g
+
+08. npm, npx and yarn
+
+    => npm (Node Package Manager):
+        Serves as the default package manager for Node.js.
+        Manages packages and dependencies for JavaScript projects.
+        Provides a vast repository of open-source libraries and tools.
+        Used for installing, updating, and managing dependencies in projects.
+        Widely used in the JavaScript ecosystem.
+
+    => npx (Node Package Executer):
+        Comes bundled with npm (version 5.2.0 and later).
+        Executes packages without having to install them globally.
+        Useful for running package-specific commands or tools without installing them permanently.
+        Provides an easy way to use CLI tools hosted on npm without installing them globally.
+
+    => Yarn:
+        Introduced as an alternative to npm by Facebook.
+        Focuses on faster package installation and dependency management.
+        Offers lock file consistency and reliability for consistent installations across machines.
+        Provides a similar interface and commands as npm but with added features like parallel installation.
+
+    => Key Differences:
+        Speed: Yarn was initially developed to address performance issues with npm by employing parallel installation and caching mechanisms.
+        Lock File: Yarn generates a yarn.lock file to ensure consistent and deterministic installations, while npm relies on package-lock.json.
+        Usage and Commands: While Yarn and npm have similar commands and functionalities, some subtle differences exist in the way they handle certain tasks.
+
+    => Usage Scenarios:
+        npm: Widely used in the JavaScript community due to its long-standing presence and extensive package repository.
+        npx: Ideal for running temporary or one-off commands without installing packages globally.
+        Yarn: Preferred by some developers for its faster performance and reliable lock file system, especially in larger projects or organizations.
+
+09. What is hot model reloading?
+    => Hot reloading is a feature that allows a web application to update the UI without reloading the whole page. 
+        It significantly speeds up development because it allows to see changes in the code in real-time without restarting the server. 
+        It is a must-have feature for every modern web application development framework.
+
+10. What is virtual DOM?
+    => Its a clone of the real DOM. React keeps it in its own memory and syncs it with the real DOM. 
+       It compares the virtual DOM with the real DOM and updates only those parts or node of the real DOM which have changed. 
