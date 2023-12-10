@@ -12,3 +12,20 @@
 03. What is class component in React?
     Class component will be created using the class keyword, and it extends the React. Component to make the class as a react component.
 
+04. Component lifecycles Phase and Methods() in React?
+    Mounting:
+        Mounting is the phase in which our React component mounts on the virtual DOM and injected into the real DOM.
+        componentDidMount()
+
+    Updating:
+        Updating is the phase in which our React component is updated in the DOM whenever there is a change in the state or props of the component.
+        componentDidUpdate()
+
+    Unmounting:
+        Unmounting is the last phase in which component is removed from the DOM.
+        componentWillUnmount()
+
+05. Ehat is Props (Properties) in React?
+    Props are a way of passing data from parent component to child component. It's read-only and cannot be modified by child component. It's works uni-directional way (parent to child).
+    Props are immutable and used for configuring and customizing the child component. It provide data like values, functions and objects to the child component from the parent component.
+
