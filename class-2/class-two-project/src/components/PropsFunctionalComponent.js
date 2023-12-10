@@ -4,6 +4,12 @@ export function PropsFunctionalComponent(props) {
   //usindg state in functional component
   const [rotation, setTime] = useState("0 hours");
   const [isEarthRotating, startEarthRotating] = useState(props.isEarthRotating);
+  const [count, setCount] = useState(0);
+
+  // We can use callback function or reference
+  const explorePlanet = () => {
+    setCount(count + 1);
+  };
 
   return (
     <div>
@@ -11,6 +17,10 @@ export function PropsFunctionalComponent(props) {
       <p>Name: {props.name}</p>
       <p>Gravity: {props.gravity}</p>
       <p>Population: {props.population}</p>
+      <p>New Explored Planets: {count}</p>
+      <button onClick={() => explorePlanet()}>
+        Click to Explore New Planet
+      </button>{" "}
       <p>Earth Rotation Time: {rotation}</p>
       {isEarthRotating ? (
         <button
@@ -18,14 +28,20 @@ export function PropsFunctionalComponent(props) {
             setTime("0 hours");
             startEarthRotating(false);
           }}
-        > Stop Rotation </button>
+        >
+          {" "}
+          Stop Rotation{" "}
+        </button>
       ) : (
         <button
           onClick={() => {
             setTime("24.0 hours");
             startEarthRotating(true);
           }}
-        > Start Rotation </button>
+        >
+          {" "}
+          Start Rotation{" "}
+        </button>
       )}
     </div>
   );
