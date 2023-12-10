@@ -25,7 +25,10 @@
         Unmounting is the last phase in which component is removed from the DOM.
         componentWillUnmount()
 
-05. Ehat is Props (Properties) in React?
+05. What is Props (Properties) in React?
     Props are a way of passing data from parent component to child component. It's read-only and cannot be modified by child component. It's works uni-directional way (parent to child).
     Props are immutable and used for configuring and customizing the child component. It provide data like values, functions and objects to the child component from the parent component.
 
+06. What is State in React?
+    State: State is used to manage component-specific data that can change over time and influence the component's rendering. 
+    Unlike props, state is mutable and can be modified using the 'setState' function in class components or state hooks (useState(a hook of React)) in functional components.
