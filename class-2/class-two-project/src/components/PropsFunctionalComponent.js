@@ -2,7 +2,8 @@ import { useState } from "react";
 
 export function PropsFunctionalComponent(props) {
   //usindg state in functional component
-  const [rotation, setCount] = useState("24.0 hours");
+  const [rotation, setTime] = useState("0 hours");
+  const [isEarthRotating, startEarthRotating] = useState(props.isEarthRotating);
 
   return (
     <div>
@@ -10,7 +11,22 @@ export function PropsFunctionalComponent(props) {
       <p>Name: {props.name}</p>
       <p>Gravity: {props.gravity}</p>
       <p>Population: {props.population}</p>
-      <p>Earth Rotation: {rotation}</p>
+      <p>Earth Rotation Time: {rotation}</p>
+      {isEarthRotating ? (
+        <button
+          onClick={() => {
+            setTime("0 hours");
+            startEarthRotating(false);
+          }}
+        > Stop Rotation </button>
+      ) : (
+        <button
+          onClick={() => {
+            setTime("24.0 hours");
+            startEarthRotating(true);
+          }}
+        > Start Rotation </button>
+      )}
     </div>
   );
 }

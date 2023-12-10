@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-import { PlanetEarthClassComponent } from './components/PlanetEarthClassComponent';
-import { PropsFunctionalComponent } from './components/PropsFunctionalComponent';
+import logo from "./logo.svg";
+import "./App.css";
+import { PlanetEarthClassComponent } from "./components/PlanetEarthClassComponent";
+import { PropsFunctionalComponent } from "./components/PropsFunctionalComponent";
 
 function App() {
   return (
@@ -9,14 +9,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello Planet Earth! I am From React Second Class Project.
-        </p>
-        <PlanetEarthClassComponent/>
+        <p>Hello Planet Earth! I am From React Second Class Project.</p>
+        <PlanetEarthClassComponent />
         <PropsFunctionalComponent
-          name = {'Earth'}
-          gravity = {'9.807 m/s²'}
-          population = {'7.674 billion'}
+          name={"Earth"}
+          gravity={"9.807 m/s²"}
+          population={"7.674 billion"}
+          isEarthRotating={false}
         />
       </header>
     </div>
