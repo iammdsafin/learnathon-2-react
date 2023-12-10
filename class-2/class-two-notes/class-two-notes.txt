@@ -32,3 +32,7 @@
 06. What is State in React?
     State: State is used to manage component-specific data that can change over time and influence the component's rendering. 
     Unlike props, state is mutable and can be modified using the 'setState' function in class components or state hooks (useState(a hook of React)) in functional components.
+
+07. What is Conrolled and Uncontrolled component in React?
+    Controlled Component: A controlled component is a component where React is in control and is the single source of truth for the form data. 
+    Uncontrolled Component: An uncontrolled component is where your form data is handled by the DOM, instead of inside your React component.

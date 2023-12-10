@@ -3,6 +3,7 @@ import "./App.css";
 import { PlanetEarthClassComponent } from "./components/PlanetEarthClassComponent";
 import { PropsFunctionalComponent } from "./components/PropsFunctionalComponent";
 import { PlanetListComponent } from "./components/PlanetListComponent";
+import { FormSubmit } from "./components/FormSubmit";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           population={"7.674 billion"}
           isEarthRotating={false}
         />
-        <PlanetListComponent/>
+        <PlanetListComponent />
+        <FormSubmit />
       </header>
     </div>
   );
