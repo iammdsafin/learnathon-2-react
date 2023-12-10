@@ -1,0 +1,14 @@
+01. What is React.StrictMode?
+    React. StrictMode is a tool that highlights potential issues in a programme. It works by encapsulating a portion of your full application as a component.
+        Identifying components with unsafe lifecycles
+        Warning about legacy string ref API usage
+        Warning about deprecated findDOMNode usage
+        Detecting unexpected side effects
+        Detecting legacy context API
+
+02. What is functional component in React?
+    Functional component is just a simple javascript function; it accepts the data in the form of props and returns the react element.
+
+03. What is class component in React?
+    Class component will be created using the class keyword, and it extends the React. Component to make the class as a react component.
+
