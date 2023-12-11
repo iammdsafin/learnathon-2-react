@@ -1,0 +1,38 @@
+01. What is React.StrictMode?
+    React. StrictMode is a tool that highlights potential issues in a programme. It works by encapsulating a portion of your full application as a component.
+        Identifying components with unsafe lifecycles
+        Warning about legacy string ref API usage
+        Warning about deprecated findDOMNode usage
+        Detecting unexpected side effects
+        Detecting legacy context API
+
+02. What is functional component in React?
+    Functional component is just a simple javascript function; it accepts the data in the form of props and returns the react element.
+
+03. What is class component in React?
+    Class component will be created using the class keyword, and it extends the React. Component to make the class as a react component.
+
+04. Component lifecycles Phase and Methods() in React?
+    Mounting:
+        Mounting is the phase in which our React component mounts on the virtual DOM and injected into the real DOM.
+        componentDidMount()
+
+    Updating:
+        Updating is the phase in which our React component is updated in the DOM whenever there is a change in the state or props of the component.
+        componentDidUpdate()
+
+    Unmounting:
+        Unmounting is the last phase in which component is removed from the DOM.
+        componentWillUnmount()
+
+05. What is Props (Properties) in React?
+    Props are a way of passing data from parent component to child component. It's read-only and cannot be modified by child component. It's works uni-directional way (parent to child).
+    Props are immutable and used for configuring and customizing the child component. It provide data like values, functions and objects to the child component from the parent component.
+
+06. What is State in React?
+    State: State is used to manage component-specific data that can change over time and influence the component's rendering. 
+    Unlike props, state is mutable and can be modified using the 'setState' function in class components or state hooks (useState(a hook of React)) in functional components.
+
+07. What is Conrolled and Uncontrolled component in React?
+    Controlled Component: A controlled component is a component where React is in control and is the single source of truth for the form data. 
+    Uncontrolled Component: An uncontrolled component is where your form data is handled by the DOM, instead of inside your React component.
